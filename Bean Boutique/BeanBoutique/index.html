@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bean Boutique - Artisan Coffee</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Bean <span>Boutique</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li>
+          <a href="cart.html" class="nav-cart">
+            Cart
+            <span class="cart-count" aria-label="items in cart">0</span>
+          </a>
+        </li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="hero-bg" role="img" aria-label="Overhead view of coffee being poured"></div>
+    <div class="container">
+      <div class="hero-content">
+        <h1 class="hero-title">
+          Every Cup<br>Tells a <em>Story</em>
+        </h1>
+        <p class="hero-desc">
+          Sourced from the world's finest farms, roasted in small batches,
+          and brewed with passion. Welcome to Bean Boutique.
+        </p>
+        <div class="hero-actions">
+          <a href="coffee.html" class="btn btn-primary">Shop Coffee</a>
+          <a href="events.html" class="btn btn-outline">Join a Workshop</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Featured This Season</h2>
+      <p class="section-subtitle">New arrivals, limited editions, and upcoming workshops.</p>
+
+      <div class="slideshow">
+        <div class="slide active">
+          <img src="images/photo-1509042239860-f550ce710b93.jpg"
+               alt="Ethiopian Yirgacheffe single-origin coffee in a white cup" />
+          <div class="slide-caption">
+            <h3>Ethiopian Yirgacheffe - New Harvest</h3>
+            <p>Floral and bright with notes of jasmine, bergamot, and lemon zest.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/photo-1495474472287-4d71bcdd2085.jpg"
+               alt="Coffee cupping event with participants tasting from small cups" />
+          <div class="slide-caption">
+            <h3>Cupping Workshop - 28 April</h3>
+            <p>Learn to taste like a professional. Limited spots available.</p>
+          </div>
+        </div>
+        <div class="slide">
+          <img src="images/photo-1510707577719-ae7c14805e3a.jpg"
+               alt="Hario V60 pour-over brewing equipment on a wooden counter" />
+          <div class="slide-caption">
+            <h3>Hario V60 Starter Kit, 15% Off</h3>
+            <p>Everything you need to brew a perfect pour-over at home.</p>
+          </div>
+        </div>
+        <div class="slide-dots">
+          <button class="dot active" role="tab"></button>
+          <button class="dot" role="tab"></button>
+          <button class="dot" role="tab"></button>
+        </div>
+        <div class="slide-controls">
+          <button class="slide-btn slide-prev" aria-label="Previous slide">&#8592;</button>
+          <button class="slide-btn slide-next" aria-label="Next slide">&#8594;</button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <section class="section section-alt" id="about">
+    <div class="container">
+      <h2 class="section-title">Why Bean Boutique?</h2>
+      <p class="section-subtitle">We obsess over every detail so you don't have to.</p>
+
+      <div class="highlights-grid">
+
+        <article class="highlight-card">
+          <h3>Direct Trade</h3>
+          <p>We build real relationships with farmers across Ethiopia, Colombia,
+             and Guatemala paying above fair-trade prices for exceptional beans.</p>
+        </article>
+
+        <article class="highlight-card">
+          <h3>Small-Batch Roasting</h3>
+          <p>Roasted weekly in our London micro-roastery. You'll never find beans
+             sitting on a shelf for months here.</p>
+        </article>
+
+        <article class="highlight-card">
+          <h3>Brew Education</h3>
+          <p>Monthly workshops cover everything from espresso dialling to advanced
+             filter techniques. Beginners very welcome.</p>
+        </article>
+
+        <article class="highlight-card">
+          <h3>Monthly Subscription</h3>
+          <p>Curated boxes delivered to your door. Discover new origins every month
+             at a price that makes sense.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Best Sellers</h2>
+      <p class="section-subtitle">A taste of what's in the bag.</p>
+
+      <div class="cards-grid">
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <img src="images/Ethiopia-coffee.jpg"
+                 alt="Ethiopian Yirgacheffe coffee beans close up"
+                 style="object-position:center 42%;" />
+            <span class="card-tag">Single Origin</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Ethiopian Yirgacheffe</h3>
+            <p class="card-desc">Light roast. Bright, floral, and tea-like, a crowd favourite for filter brewing.</p>
+            <div class="card-price">45 LYD <small style="font-size:13px;color:var(--text-mid)">/ 250g</small></div>
+          </div>
+          <div class="card-footer">
+            <a href="coffee.html" class="btn btn-outline">View Details</a>
+            <button class="btn btn-primary"
+                    onclick="window.bbCart.addToCart({id:'eth-yirg',name:'Ethiopian Yirgacheffe',price:45.00,img:'images/Ethiopia-coffee.jpg'})">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <img src="images/Columbian_Huila_Coffee.webp"
+                 alt="Colombian Huila coffee served in an espresso cup"
+                 style="object-position:center 48%;" />
+            <span class="card-tag">Bestseller</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">Colombian Huila</h3>
+            <p class="card-desc">Medium roast. Smooth caramel sweetness with a hint of red apple and milk chocolate.</p>
+            <div class="card-price">40 LYD <small style="font-size:13px;color:var(--text-mid)">/ 250g</small></div>
+          </div>
+          <div class="card-footer">
+            <a href="coffee.html" class="btn btn-outline">View Details</a>
+            <button class="btn btn-primary"
+                    onclick="window.bbCart.addToCart({id:'col-huila',name:'Colombian Huila',price:40.00,img:'images/steaming-espresso-cup-grey-background-closeup_1500x.jpg'})">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+        <article class="card">
+          <div class="card-img-wrap">
+            <img src="images/Espresso_Shot_2.jpg"
+                 alt="House Espresso Blend served as an espresso shot"
+                 style="object-position:center 44%;" />
+            <span class="card-tag">House Blend</span>
+          </div>
+          <div class="card-body">
+            <h3 class="card-title">House Espresso Blend</h3>
+            <p class="card-desc">Dark roast. Rich, bold, and reliable, our signature blend for espresso machines.</p>
+            <div class="card-price">38 LYD <small style="font-size:13px;color:var(--text-mid)">/ 250g</small></div>
+          </div>
+          <div class="card-footer">
+            <a href="coffee.html" class="btn btn-outline">View Details</a>
+            <button class="btn btn-primary"
+                    onclick="window.bbCart.addToCart({id:'house-esp',name:'House Espresso Blend',price:38.00,img:'images/Espresso_Shot_2.jpg'})">
+              Add to Cart
+            </button>
+          </div>
+        </article>
+
+      </div>
+
+      <div style="text-align:center; margin-top:40px;">
+        <a href="coffee.html" class="btn btn-dark">See All Coffees</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt" id="find-us">
+    <div class="container">
+      <h2 class="section-title">Find Us</h2>
+      <p class="section-subtitle">We're based in Hay Alandalus, Tripoli.</p>
+
+      <div class="map-container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d108454.52143155185!2d13.093835099999999!3d32.8872094!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x13a892ea8c4c6029%3A0xdc53e39f62eb7f44!2sTripoli%2C%20Libya!5e0!3m2!1sen!2sus!4v1700000000000"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+          title="Bean Boutique location map, Tripoli, Libya">
+        </iframe>
+      </div>
+
+      <div class="contact-details">
+        <p>Location: Hay Alandalus, Tripoli</p>
+        <p>Phone: +218 91 391 0778</p>
+        <p>Email: bean-boutique@info.com</p>
+      </div>
+    </div>
+  </section>
+  <section class="social-feed">
+    <div class="container">
+      <h2 class="section-title">Follow Our Journey</h2>
+      <p class="section-subtitle">Recent posts from our Instagram and Facebook pages</p>
+
+      <div class="social-feed-grid">
+
+        <div class="social-post">
+          <img src="images/da566d82a52447c21e128eabeb2758c2.jpg"
+               alt="Morning coffee setup with a V60 pour-over" loading="lazy"
+               style="object-position:center 44%;" />
+          <div class="social-post-body">
+            <p class="social-post-meta">@beanboutique - 2 days ago</p>
+            <p>Morning light and a perfect V60. Nothing better to start the day.</p>
+          </div>
+        </div>
+
+        <div class="social-post">
+          <img src="images/photo-1495474472287-4d71bcdd2085.jpg"
+               alt="coffee cupping session" loading="lazy" />
+          <div class="social-post-body">
+            <p class="social-post-meta">@beanboutique - 4 days ago</p>
+            <p>Our cupping session last week was a full house. Spots for May are open now.</p>
+          </div>
+        </div>
+
+        <div class="social-post">
+          <img src="images/V60_Material_cover-1170x550.webp"
+               alt="New Hario equipment on display" loading="lazy"
+               style="object-position:center 50%;" />
+          <div class="social-post-body">
+            <p class="social-post-meta">@beanboutique - 1 week ago</p>
+            <p>New Hario equipment just arrived. Come in and try before you buy.</p>
+          </div>
+        </div>
+
+        <div class="social-post">
+          <img src="images/stock-coffee-bags.webp"
+               alt="Fresh seasonal coffee bags ready for sale" loading="lazy"
+               style="object-position:center 48%;" />
+          <div class="social-post-body">
+            <p class="social-post-meta">@beanboutique - 1 week ago</p>
+            <p>New season Ethiopian Yirgacheffe is in. Light, floral, and very limited stock.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Bean <span>Boutique</span></a>
+        </div>
+
+        <div class="footer-col">
+          <h4>Shop</h4>
+          <ul>
+            <li><a href="coffee.html">Coffee</a></li>
+            <li><a href="equipment.html">Equipment</a></li>
+            <li><a href="offers.html">Subscriptions</a></li>
+            <li><a href="cart.html">Cart</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Learn</h4>
+          <ul>
+            <li><a href="events.html">Workshops</a></li>
+            <li><a href="coffee.html">Brew Guides</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-col">
+          <h4>Company</h4>
+          <ul>
+            <li><a href="index.html#about">About Us</a></li>
+            <li><a href="index.html#find-us">Contact</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+        </div>
+
+      </div>
+
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique.</p>
+      </div>
+    </div>
+  </footer>
+  <div class="modal-overlay hidden" id="modalOverlay" role="dialog" aria-modal="true" aria-labelledby="modalTitle">
+    <div class="modal">
+      <button class="modal-close" id="modalClose" aria-label="Close popup">&times;</button>
+      <h2 id="modalTitle">Welcome to Bean Boutique!</h2>
+      <p>Sign up and get <strong>10% off</strong> your first order. No spam, just great coffee news.</p>
+
+      <div class="modal-form">
+        <input type="email" id="modalEmail" placeholder="your@email.com" aria-label="Email address" />
+        <button class="btn btn-primary" id="modalSubmit">Claim Discount</button>
+      </div>
+      <p id="modalMsg" style="font-size:13px;color:#c9882a;margin-top:13px;min-height:19px;"></p>
+      <button class="modal-skip" id="modalSkip">No thanks, I'll pay full price</button>
+    </div>
+  </div>
+  <script src="main.js"></script>
+  <script src="index.js"></script>
+
+</body>
+</html>

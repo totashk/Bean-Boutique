@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Special Offers - Bean Boutique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Bean <span>Boutique</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="cart.html" class="nav-cart">Cart <span class="cart-count">0</span></a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+  <header class="page-hero">
+    <div class="container">
+      <h1>Special Offers</h1>
+      <p>Save on great coffee, and never run out again with a subscription.</p>
+    </div>
+  </header>
+  <main>
+    <section class="section">
+      <div class="container">
+
+              <div class="promo-banner">
+          <div>
+            <h2>Spring Sale, 20% Off Everything</h2>
+            <p>Use code <strong>IMU2026</strong> at checkout. Limited time only.</p>
+
+            <div class="countdown-wrap" role="timer" aria-label="Time remaining in sale">
+              <div class="countdown-block">
+                <div class="countdown-num" id="cdDays">00</div>
+                <div class="countdown-label">Days</div>
+              </div>
+              <div class="countdown-block">
+                <div class="countdown-num" id="cdHours">00</div>
+                <div class="countdown-label">Hours</div>
+              </div>
+              <div class="countdown-block">
+                <div class="countdown-num" id="cdMins">00</div>
+                <div class="countdown-label">Mins</div>
+              </div>
+              <div class="countdown-block">
+                <div class="countdown-num" id="cdSecs">00</div>
+                <div class="countdown-label">Secs</div>
+              </div>
+            </div>
+          </div>
+          <div class="promo-badge">IMU2026</div>
+        </div>
+              <h2 class="section-title" style="margin-bottom:1rem;">This Week's Picks</h2>
+        <p class="section-subtitle">Hand-picked deals updated every Monday.</p>
+
+        <div class="cards-grid" style="margin-bottom:64px;">
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="images/TLP-701.webp"
+                   alt="Hario V60 starter bundle with brewer and accessories" loading="lazy"
+                   style="object-position:center 44%;" />
+              <span class="card-tag">Bundle Deal</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">V60 Starter Bundle</h3>
+              <p class="card-desc">
+                Everything to get started: Hario V60, 40 filters, 250g Colombian Huila.
+                Usually 52.00 LYD separately.
+              </p>
+              <div class="card-price">
+                <span style="text-decoration:line-through;font-size:.8em;color:var(--text-mid);">52.00 LYD</span>
+                39.99 LYD
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'v60-bundle',name:'V60 Starter Bundle',price:39.99,img:'images/TLP-701.webp'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="images/7410220-Kraft-TinTieCoffeeBags-Title.webp"
+                   alt="Discovery triple pack coffee bags" loading="lazy"
+                   style="object-position:center 42%;" />
+              <span class="card-tag">Triple Pack</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Discovery Triple Pack</h3>
+              <p class="card-desc">
+                Three 250g bags from three different origins, a great way to explore
+                the range without committing to a full bag of each.
+              </p>
+              <div class="card-price">
+                <span style="text-decoration:line-through;font-size:.8em;color:var(--text-mid);">38.00 LYD</span>
+                29.99 LYD
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'triple-pack',name:'Discovery Triple Pack',price:29.99,img:'images/7410220-Kraft-TinTieCoffeeBags-Title.webp'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="images/aero_3_1.webp"
+                   alt="AeroPress bundle product image" loading="lazy"
+                   style="object-position:center 50%;background:#f4ede4;" />
+              <span class="card-tag">Flash Sale</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">AeroPress + Kenyan AA</h3>
+              <p class="card-desc">
+                Grab an AeroPress and a 250g bag of our Kenyan AA together at a reduced
+                price. A seriously good combination for bold filter coffee.
+              </p>
+              <div class="card-price">
+                <span style="text-decoration:line-through;font-size:.8em;color:var(--text-mid);">49.49 LYD</span>
+                41.00 LYD
+              </div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'aeropress-bundle',name:'AeroPress + Kenyan AA',price:41.00,img:'images/aero_3_1.webp'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+        </div>
+              <h2 class="section-title" style="margin-bottom:1rem;">Monthly Subscriptions</h2>
+        <p class="section-subtitle">
+          Fresh beans, automatically. Cancel or pause anytime, no awkward contracts.
+        </p>
+        <div class="plans-grid">
+          <div class="plan-card">
+            <p class="plan-name">Starter</p>
+            <p class="plan-price">18.00 LYD <span>/ month</span></p>
+            <p class="plan-desc">Perfect for the occasional home brewer who wants something better
+               than supermarket coffee.</p>
+            <ul class="plan-features">
+              <li>1 × 250g bag per month</li>
+              <li>Single origin or blend</li>
+              <li>Whole bean or ground</li>
+              <li>Tasting notes card included</li>
+              <li>Free standard delivery</li>
+            </ul>
+            <button class="btn btn-outline"
+                    onclick="window.bbCart.addToCart({id:'sub-starter',name:'Starter Subscription (1 month)',price:18.00,img:'images/Columbian_Huila_Coffee.webp'})">
+              Subscribe, 18.00 LYD/mo
+            </button>
+          </div>
+          <div class="plan-card featured">
+            <span class="plan-badge">Most Popular</span>
+            <p class="plan-name">Regular</p>
+            <p class="plan-price">32.00 LYD <span>/ month</span></p>
+            <p class="plan-desc">Our most popular plan, great value and real variety for the
+               dedicated home brewer.</p>
+            <ul class="plan-features">
+              <li>2 × 250g bags per month</li>
+              <li>Curated by our roasters</li>
+              <li>Mix of origins and roasts</li>
+              <li>Tasting notes + brew guide</li>
+              <li>Free priority delivery</li>
+              <li>10% off all shop purchases</li>
+            </ul>
+            <button class="btn btn-primary"
+                    onclick="window.bbCart.addToCart({id:'sub-regular',name:'Regular Subscription (1 month)',price:32.00,img:'images/Columbian_Huila_Coffee.webp'})">
+              Subscribe, 32.00 LYD/mo
+            </button>
+          </div>
+          <div class="plan-card">
+            <p class="plan-name">Connoisseur</p>
+            <p class="plan-price">55.00 LYD <span>/ month</span></p>
+            <p class="plan-desc">For the serious coffee lover. Exclusive lots, early access to
+               limited releases, and full concierge support.</p>
+            <ul class="plan-features">
+              <li>3 × 250g bags per month</li>
+              <li>Access to micro-lot exclusives</li>
+              <li>Quarterly video tasting session</li>
+              <li>Personalised roaster notes</li>
+              <li>Free express delivery</li>
+              <li>15% off all shop purchases</li>
+              <li>Free workshop ticket per quarter</li>
+            </ul>
+            <button class="btn btn-outline"
+                    onclick="window.bbCart.addToCart({id:'sub-connoisseur',name:'Connoisseur Subscription (1 month)',price:55.00,img:'images/Columbian_Huila_Coffee.webp'})">
+              Subscribe, 55.00 LYD/mo
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Bean <span>Boutique</span></a>
+        </div>
+        <div class="footer-col"><h4>Shop</h4><ul>
+          <li><a href="coffee.html">Coffee</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="offers.html">Subscriptions</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Learn</h4><ul>
+          <li><a href="events.html">Workshops</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Company</h4><ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#find-us">Contact</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique.</p>
+      </div> </div>
+  </footer>
+  <script src="main.js"></script>
+  <script src="offers.js"></script>
+</body>
+</html>

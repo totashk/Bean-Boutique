@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Events & Workshops - Bean Boutique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Bean <span>Boutique</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="cart.html" class="nav-cart">Cart <span class="cart-count">0</span></a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <header class="page-hero">
+    <div class="container">
+      <h1>Events & Workshops</h1>
+      <p>Come learn, taste, and connect. Our workshops are relaxed, informal, and actually useful.</p>
+    </div>
+  </header>
+
+
+  <main>
+
+      <section class="section">
+      <div class="container">
+        <h2 class="section-title">Upcoming Events</h2>
+        <p class="section-subtitle">All events take place at our Tripoli coffee studio unless stated.</p>
+
+        <div class="events-list" role="list">
+
+          <article class="event-item" role="listitem">
+            <div class="event-date-block" aria-label="Date: 28 April">
+              <span class="day">28</span>
+              <span class="month">APR</span>
+            </div>
+            <div class="event-info">
+              <h3>Coffee Cupping Session</h3>
+              <p>
+                Ever wondered how professionals taste and score coffee? This two-hour
+                session walks you through the SCA cupping protocol, slurping included.
+                We'll taste five coffees from different origins and you'll leave with a
+                solid vocabulary for describing what's in your cup.
+              </p>
+              <p class="event-meta">10:00 – 12:00 · Hay Alandalus, Tripoli · 25.00 LYD per person · Ages 18+</p>
+              <a href="#register" class="btn btn-primary" style="margin-top:.8rem;">Register Now</a>
+            </div>
+          </article>
+
+          <article class="event-item" role="listitem">
+            <div class="event-date-block" aria-label="Date: 5 May">
+              <span class="day">05</span>
+              <span class="month">MAY</span>
+            </div>
+            <div class="event-info">
+              <h3>Espresso Dialling Workshop</h3>
+              <p>
+                Getting a consistent espresso at home is one of the most common
+                frustrations for home brewers. In this hands-on session, you'll learn
+                how to adjust grind size, dose, and yield to pull a balanced shot on our
+                commercial machine. You'll practise on our La Marzocco Linea Mini.
+              </p>
+              <p class="event-meta">14:00 – 16:30 · Ben Ashour, Tripoli · 35.00 LYD per person · Max 6 attendees</p>
+              <a href="#register" class="btn btn-primary" style="margin-top:.8rem;">Register Now</a>
+            </div>
+          </article>
+
+          <article class="event-item" role="listitem">
+            <div class="event-date-block" aria-label="Date: 15 May">
+              <span class="day">15</span>
+              <span class="month">MAY</span>
+            </div>
+            <div class="event-info">
+              <h3>Intro to Filter Brewing</h3>
+              <p>
+                A beginner-friendly exploration of V60, Chemex, and AeroPress. No
+                experience needed, just a curiosity about coffee. You'll brew three
+                different coffees on three different methods and compare the results.
+                All equipment and beans are provided.
+              </p>
+              <p class="event-meta">11:00 – 13:00 · Hay Alandalus, Tripoli · 20.00 LYD per person · All levels</p>
+              <a href="#register" class="btn btn-primary" style="margin-top:.8rem;">Register Now</a>
+            </div>
+          </article>
+
+          <article class="event-item" role="listitem">
+            <div class="event-date-block" aria-label="Date: 22 May">
+              <span class="day">22</span>
+              <span class="month">MAY</span>
+            </div>
+            <div class="event-info">
+              <h3>Origin: Ethiopia Tasting Evening</h3>
+              <p>
+                A deep dive into Ethiopian coffees, three different processing methods
+                (washed, natural, honey) from the same farm. We'll explore how
+                fermentation and drying affect the final flavour, paired with light food.
+                Perfect for the coffee geek in your life.
+              </p>
+              <p class="event-meta">19:00 – 21:00 · Gargaresh Road, Tripoli · 40.00 LYD per person · Includes food pairing</p>
+              <a href="#register" class="btn btn-primary" style="margin-top:.8rem;">Register Now</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+      <section class="section" id="register">
+      <div class="container">
+        <div class="form-section">
+          <h2 class="section-title">Register for an Event</h2>
+          <p class="section-subtitle">Fill in your details and we'll confirm your spot by email.</p>
+
+          <form class="reg-form" id="regForm" novalidate>
+
+            <div class="form-group">
+              <label for="firstName">First Name *</label>
+              <input type="text" id="firstName" name="firstName"
+                     placeholder="e.g. Fatima" autocomplete="given-name" />
+              <span class="form-error" id="errFirstName"></span>
+            </div>
+
+            <div class="form-group">
+              <label for="lastName">Last Name *</label>
+              <input type="text" id="lastName" name="lastName"
+                     placeholder="e.g. Alshanfak" autocomplete="family-name" />
+              <span class="form-error" id="errLastName"></span>
+            </div>
+
+            <div class="form-group full">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email"
+                     placeholder="your@email.com" autocomplete="email" />
+              <span class="form-error" id="errEmail"></span>
+            </div>
+
+            <div class="form-group full">
+              <label for="eventSelect">Select Event *</label>
+              <select id="eventSelect" name="event">
+                <option value="">Choose an event</option>
+                <option value="cupping-28apr">Coffee Cupping Session, 28 Apr</option>
+                <option value="espresso-5may">Espresso Dialling Workshop, 5 May</option>
+                <option value="filter-15may">Intro to Filter Brewing, 15 May</option>
+                <option value="ethiopia-22may">Origin: Ethiopia Tasting Evening, 22 May</option>
+              </select>
+              <span class="form-error" id="errEvent"></span>
+            </div>
+
+            <div class="form-group full">
+              <label for="notes">Dietary Requirements / Notes</label>
+              <textarea id="notes" name="notes" rows="3"
+                        placeholder="Any allergies, accessibility requirements, or questions…"></textarea>
+            </div>
+
+            <div class="form-group full" style="align-items:flex-start;">
+              <button type="submit" class="btn btn-primary">Submit Registration</button>
+              <p id="formSuccess" style="color:#2ecc71;font-size:.88rem;margin-top:.8rem;display:none;">
+                 Registration submitted! We'll confirm your spot shortly.
+              </p>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Bean <span>Boutique</span></a>
+        </div>
+        <div class="footer-col"><h4>Shop</h4><ul>
+          <li><a href="coffee.html">Coffee</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="offers.html">Subscriptions</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Learn</h4><ul>
+          <li><a href="events.html">Workshops</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Company</h4><ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#find-us">Contact</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+  <script src="events.js"></script>
+
+</body>
+</html>

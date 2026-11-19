@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Brewing Equipment - Bean Boutique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+  </style>
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Bean <span>Boutique</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li><a href="cart.html" class="nav-cart">Cart <span class="cart-count">0</span></a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <header class="page-hero">
+    <div class="container">
+      <h1>Brewing Equipment</h1>
+      <p>The right tool makes all the difference. We stock only what we actually use.</p>
+    </div>
+  </header>
+
+
+  <main>
+
+      <section class="section">
+      <div class="container">
+        <h2 class="section-title">Our Equipment Range</h2>
+        <p class="section-subtitle">From beginner to professional, there's a brewer for every level.</p>
+
+        <div class="cards-grid">
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="images/il_1588xN.7986803181_1bj4.webp"
+                   alt="Hario V60 ceramic pour-over dripper on a wooden surface" loading="lazy"
+                   style="object-position:center 42%;" />
+              <span class="card-tag">Pour-Over</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Hario V60 (Ceramic)</h3>
+              <p class="card-desc">
+                The V60 is arguably the most popular pour-over dripper in specialty coffee.
+                Its spiral ridges and large hole give you full control over extraction time,
+                making it great for experimenting with recipes.
+              </p>
+              <p class="card-meta">Usage tip: Use a 1:16 coffee-to-water ratio, pour in slow
+                circles, and aim for a 3–3.5 minute total brew time.</p>
+              <div class="card-price">30.00 LYD</div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'v60-ceramic',name:'Hario V60 Ceramic',price:30.00,img:'images/il_1588xN.7986803181_1bj4.webp'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="images/S885b1674d3da4fb1a2168fb2bc925824o.webp"
+                   alt="Chemex coffee maker with coffee brewing" loading="lazy"
+                   style="object-position:center 40%;" />
+              <span class="card-tag">Pour-Over</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Chemex 6-Cup</h3>
+              <p class="card-desc">
+                Equal parts coffee brewer and design object. The Chemex's thick paper filters
+                remove fine particles and oils, producing an exceptionally clean, clear cup.
+                Ideal for light-roast single origins.
+              </p>
+              <p class="card-meta">Usage tip: Pre-wet the filter with hot water to remove any
+                papery taste. Bloom the grounds for 45 seconds before your main pour.</p>
+                            <div class="card-price">55.00 LYD</div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'chemex-6',name:'Chemex 6-Cup',price:55.00,img:'images/S885b1674d3da4fb1a2168fb2bc925824o.webp'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="images/GO_black_4.webp"
+                   alt="AeroPress Original coffee maker" loading="lazy"
+                   style="object-position:center 50%;" />
+              <span class="card-tag">Immersion</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">AeroPress Original</h3>
+              <p class="card-desc">
+                The AeroPress is almost impossible to brew a bad cup with. It's forgiving,
+                fast (under 2 minutes), and produces a concentrated, full-bodied coffee.
+                Great for travel too.
+              </p>
+              <p class="card-meta">Usage tip: Try the inverted method for longer steep times.
+                Fine grind gives espresso-style, coarse grind gives filter-style results.</p>
+                            <div class="card-price">60.00 LYD</div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'aeropress',name:'AeroPress Original',price:60.00,img:'images/GO_black_4.webp'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="images/virginia-walnut-2_New.webp"
+                   alt="Comandante C40 MK4 grinder" loading="lazy"
+                   style="object-position:center 40%;" />
+              <span class="card-tag">Grinder</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Comandante C40 MK4</h3>
+              <p class="card-desc">
+                The gold standard of hand grinders. Its precision-engineered steel burrs
+                produce an incredibly consistent grind at any setting. If you're investing
+                in good coffee, this is worth every penny.
+              </p>
+              <p class="card-meta">Usage tip: Grind fresh before every brew.
+                The nitrogen blade steel keeps edge retention for years.</p>
+                            <div class="card-price">50.00 LYD</div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'comandante',name:'Comandante C40 MK4',price:50.00,img:'images/virginia-walnut-2_New.webp'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="images/Fellow-Spring-20222485.jpg"
+                   alt="Fellow Stagg EKG electric kettle on a counter" loading="lazy"
+                   style="object-position:center 42%;" />
+              <span class="card-tag">Kettle</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Fellow Stagg EKG Kettle</h3>
+              <p class="card-desc">
+                A temperature-controlled gooseneck kettle that looks incredible and works
+                even better. Set your exact temperature and hold it for as long as you need.
+                The narrow spout gives you full control of pour rate.
+              </p>
+              <p class="card-meta">Usage tip: 93°C for light roasts, 88°C for dark.
+                Pre-heat your dripper with a small pour before brewing.</p>
+                            <div class="card-price">210.00 LYD</div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'stagg-ekg',name:'Fellow Stagg EKG Kettle',price:210.00,img:'images/Fellow-Spring-20222485.jpg'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-img-wrap">
+              <img src="images/pearl-life_1_800x.webp"
+                   alt="Acaia Pearl Scale" loading="lazy"
+                   style="object-position:center 44%;" />
+              <span class="card-tag">Accessory</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Acaia Pearl Scale</h3>
+              <p class="card-desc">
+                Precision weighing is the single biggest upgrade most home brewers can make.
+                The Acaia Pearl has a built-in timer and a flow-rate indicator, making it the
+                favourite tool of professional baristas worldwide.
+              </p>
+              <p class="card-meta">Usage tip: Weigh both your coffee and your water.
+                Eyeballing either one introduces inconsistency that no technique can fix.</p>
+              <div class="card-price">50.00 LYD</div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'acaia-pearl',name:'Acaia Pearl Scale',price:50.00,img:'images/pearl-life_1_800x.webp'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+
+      <section class="section section-alt">
+      <div class="container">
+        <h2 class="section-title">Which Brewer Should I Buy?</h2>
+        <p class="section-subtitle">A rough guide based on your priorities.</p>
+
+        <div style="overflow-x:auto;">
+          <table style="width:100%;border-collapse:collapse;font-size:14px;">
+            <thead>
+              <tr style="background:var(--sage);color:var(--brown-dark);">
+                <th style="padding:13px 16px;text-align:left;border-radius:8px 0 0 0;">Brewer</th>
+                <th style="padding:13px 16px;text-align:left;">Difficulty</th>
+                <th style="padding:13px 16px;text-align:left;">Brew Time</th>
+                <th style="padding:13px 16px;text-align:left;border-radius:0 8px 0 0;">Best For</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="background:var(--white);">
+                <td style="padding:13px 16px;font-weight:700;">AeroPress</td>
+                <td style="padding:13px 16px;">Beginner</td>
+                <td style="padding:13px 16px;">~2 min</td>
+                <td style="padding:13px 16px;">Full-bodied, forgiving brews</td>
+              </tr>
+              <tr style="background:var(--tan);">
+                <td style="padding:13px 16px;font-weight:700;">V60</td>
+                <td style="padding:13px 16px;">Intermediate</td>
+                <td style="padding:13px 16px;">~3.5 min</td>
+                <td style="padding:13px 16px;">Clean, nuanced light roasts</td>
+              </tr>
+              <tr style="background:var(--white);">
+                <td style="padding:13px 16px;font-weight:700;">Chemex</td>
+                <td style="padding:13px 16px;">Intermediate</td>
+                <td style="padding:13px 16px;">~5 min</td>
+                <td style="padding:13px 16px;">Crystal-clear, delicate coffees</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Bean <span>Boutique</span></a>
+        </div>
+        <div class="footer-col"><h4>Shop</h4><ul>
+          <li><a href="coffee.html">Coffee</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="offers.html">Subscriptions</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Learn</h4><ul>
+          <li><a href="events.html">Workshops</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Company</h4><ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#find-us">Contact</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+
+</body>
+</html>

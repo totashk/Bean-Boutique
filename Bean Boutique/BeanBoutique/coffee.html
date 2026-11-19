@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Coffee Selection - Bean Boutique</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Nunito+Sans:wght@400;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <nav class="navbar" aria-label="Main navigation">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Bean <span>Boutique</span></a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="coffee.html">Coffee</a></li>
+        <li><a href="equipment.html">Equipment</a></li>
+        <li><a href="events.html">Events</a></li>
+        <li><a href="offers.html">Offers</a></li>
+        <li>
+          <a href="cart.html" class="nav-cart">Cart
+            <span class="cart-count">0</span>
+          </a>
+        </li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+
+  <header class="page-hero">
+    <div class="container">
+      <h1>Coffee Selection</h1>
+      <p>Single origins, blends, and limited editions, something for every palate.</p>
+    </div>
+  </header>
+
+
+  <main>
+    <section class="section">
+      <div class="container">
+
+              <div class="search-wrap" role="search">
+          <input
+            type="search"
+            id="coffeeSearch"
+            placeholder="Search coffees, origins, or tasting notes…"
+            aria-label="Search coffees"
+            autocomplete="off"
+          />
+        </div>
+
+              <div class="filter-pills" role="group" aria-label="Filter by roast level">
+          <button class="pill active" data-filter="all">All Coffees</button>
+          <button class="pill" data-filter="light">Light Roast</button>
+          <button class="pill" data-filter="medium">Medium Roast</button>
+          <button class="pill" data-filter="dark">Dark Roast</button>
+          <button class="pill" data-filter="blend">Blends</button>
+        </div>
+
+              <div class="cards-grid" id="coffeeGrid">
+          <article class="card" data-roast="light" data-name="Ethiopian Yirgacheffe floral jasmine bergamot lemon">
+            <div class="card-img-wrap">
+              <img src="images/Ethiopia-coffee.jpg"
+                   alt="Ethiopian Yirgacheffe coffee beans" loading="lazy"
+                   style="object-position:center 42%;" />
+              <span class="card-tag">Single Origin</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Ethiopian Yirgacheffe</h3>
+              <p class="card-meta">Light Roast · Filter / Pour-Over</p>
+              <p class="card-desc">
+                Sourced from the Gedeo Zone in southern Ethiopia, this washed
+                Yirgacheffe is everything a light-roast fan could want.
+              </p>
+              <div class="tasting-notes">
+                <span class="note-chip">Jasmine</span>
+                <span class="note-chip">Bergamot</span>
+                <span class="note-chip">Lemon Zest</span>
+                <span class="note-chip">Black Tea</span>
+              </div>
+              <div class="card-price">45.00 LYD <small style="font-size:.7em;color:var(--text-mid)">/250g</small></div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'eth-yirg',name:'Ethiopian Yirgacheffe',price:45.00,img:'images/Ethiopia-coffee.jpg'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="card" data-roast="medium" data-name="Colombian Huila caramel apple milk chocolate">
+            <div class="card-img-wrap">
+              <img src="images/Columbian_Huila_Coffee.webp"
+                   alt="Colombian Huila coffee served in an espresso cup" loading="lazy"
+                   style="object-position:center 48%;" />
+              <span class="card-tag">Bestseller</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Colombian Huila</h3>
+              <p class="card-meta">Medium Roast · Espresso / Filter</p>
+              <p class="card-desc">
+                A classic Colombian with exceptional clarity and sweetness.
+                Grown at altitude in the Huila department, this is a genuinely
+                crowd-pleasing coffee.
+              </p>
+              <div class="tasting-notes">
+                <span class="note-chip">Caramel</span>
+                <span class="note-chip">Red Apple</span>
+                <span class="note-chip">Milk Choc</span>
+              </div>
+              <div class="card-price">40.00 LYD <small style="font-size:.7em;color:var(--text-mid)">/250g</small></div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'col-huila',name:'Colombian Huila',price:40.00,img:'images/steaming-espresso-cup-grey-background-closeup_1500x.jpg'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="card" data-roast="dark" data-name="House Espresso Blend bold dark chocolate smoky">
+            <div class="card-img-wrap">
+              <img src="images/Espresso_Shot_2.jpg"
+                   alt="House Espresso Blend served as an espresso shot" loading="lazy"
+                   style="object-position:center 44%;" />
+              <span class="card-tag">House Blend</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">House Espresso Blend</h3>
+              <p class="card-meta">Dark Roast · Espresso</p>
+              <p class="card-desc">
+                Our signature blend combines Brazilian Santos and Colombian Supremo
+                for a rich, reliable espresso with serious body.
+              </p>
+              <div class="tasting-notes">
+                <span class="note-chip">Dark Choc</span>
+                <span class="note-chip">Brown Sugar</span>
+                <span class="note-chip">Toasted Nut</span>
+              </div>
+              <div class="card-price">38.00 LYD <small style="font-size:.7em;color:var(--text-mid)">/250g</small></div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'house-esp',name:'House Espresso Blend',price:38.00,img:'images/Espresso_Shot_2.jpg'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="card" data-roast="light" data-name="Guatemalan Antigua light roast citrus peach floral washed">
+            <div class="card-img-wrap">
+              <img src="images/f43ad2e11d3eb4e7ab3af9fc2e4a1e98.avif"
+                   alt="Guatemalan Antigua coffee" loading="lazy"
+                   style="object-position:center 35%;" />
+              <span class="card-tag">New Arrival</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Guatemalan Antigua</h3>
+              <p class="card-meta">Light Roast · Aeropress / V60</p>
+              <p class="card-desc">
+                Grown in volcanic soil at 1,500m, this washed lot has a clean
+                sweetness that works beautifully on any filter method.
+              </p>
+              <div class="tasting-notes">
+                <span class="note-chip">Peach</span>
+                <span class="note-chip">Citrus</span>
+                <span class="note-chip">Almond</span>
+              </div>
+              <div class="card-price">48.00 LYD <small style="font-size:.7em;color:var(--text-mid)">/250g</small></div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'guat-ant',name:'Guatemalan Antigua',price:48.00,img:'images/f43ad2e11d3eb4e7ab3af9fc2e4a1e98.avif'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="card" data-roast="medium" data-name="Kenyan AA medium roast blackcurrant tomato winey">
+            <div class="card-img-wrap">
+              <img src="images/morning-coffee-break-stockcake.webp"
+                   alt="Kenyan AA coffee served in the morning" loading="lazy"
+                   style="object-position:center 46%;" />
+              <span class="card-tag">Limited</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Kenyan AA</h3>
+              <p class="card-meta">Medium Roast · Filter</p>
+              <p class="card-desc">
+                Kenya's AA-grade beans are famous for their complex, winey profile.
+                This lot from Nyeri is no exception, bold, bright, and unforgettable.
+              </p>
+              <div class="tasting-notes">
+                <span class="note-chip">Blackcurrant</span>
+                <span class="note-chip">Tomato</span>
+                <span class="note-chip">Black Cherry</span>
+              </div>
+              <div class="card-price">52.00 LYD <small style="font-size:.7em;color:var(--text-mid)">/250g</small></div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'ken-aa',name:'Kenyan AA',price:52.00,img:'images/morning-coffee-break-stockcake.webp'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+
+          <article class="card" data-roast="blend" data-name="Decaf Blend Swiss Water Process smooth blend">
+            <div class="card-img-wrap">
+              <img src="images/SEOon_3-tasses.webp"
+                   alt="Smooth Decaf Blend served in cups" loading="lazy"
+                   style="object-position:center 45%;" />
+              <span class="card-tag">Decaf</span>
+            </div>
+            <div class="card-body">
+              <h3 class="card-title">Smooth Decaf Blend</h3>
+              <p class="card-meta">Medium Roast · Swiss Water Process · Espresso / Filter</p>
+              <p class="card-desc">
+                Swiss Water Process decaf that actually tastes good. A blend of
+                Colombian and Brazilian beans, decaffeinated without chemicals.
+              </p>
+              <div class="tasting-notes">
+                <span class="note-chip">Toffee</span>
+                <span class="note-chip">Walnut</span>
+                <span class="note-chip">Vanilla</span>
+              </div>
+              <div class="card-price">42.00 LYD <small style="font-size:.7em;color:var(--text-mid)">/250g</small></div>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-primary"
+                      onclick="window.bbCart.addToCart({id:'decaf-blend',name:'Smooth Decaf Blend',price:42.00,img:'images/SEOon_3-tasses.webp'})">
+                Add to Cart
+              </button>
+            </div>
+          </article>
+          <p class="no-results" id="noResults" role="status">
+            No coffees match your search. Try a different term or clear the filter.
+          </p>
+
+        </div>
+
+      </div>
+    </section>
+  </main>
+
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="nav-logo">Bean <span>Boutique</span></a>
+        </div>
+        <div class="footer-col"><h4>Shop</h4><ul>
+          <li><a href="coffee.html">Coffee</a></li>
+          <li><a href="equipment.html">Equipment</a></li>
+          <li><a href="offers.html">Subscriptions</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Learn</h4><ul>
+          <li><a href="events.html">Workshops</a></li>
+        </ul></div>
+        <div class="footer-col"><h4>Company</h4><ul>
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#find-us">Contact</a></li>
+        </ul></div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Bean Boutique.</p>
+      </div>
+    </div>
+  </footer>
+
+
+  <script src="main.js"></script>
+  <script src="coffee.js"></script>
+
+</body>
+</html>
